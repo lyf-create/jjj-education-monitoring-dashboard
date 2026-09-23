@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>京津冀教育协同发展监测平台</title>
+  <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+  <main class="screen" aria-label="京津冀教育协同发展监测平台">
+    <header class="topbar">
+      <div class="brand"><i class="brand-mark"></i><div><h1>京津冀教育协同发展监测平台</h1><p>Beijing Tianjin-Hebei Education Collaborative Development Monitoring Platform</p></div></div>
+      <nav><a class="active">首页</a><a>协同监测</a><a>专题分析</a><a>数据统计</a><a>研究报告</a><a>关于我们</a></nav>
+      <div class="top-right"><span>协同 · 共享 · 创新 · 高质量发展</span><label class="month"><b>▣</b><select id="global-month" aria-label="全局统计年月"></select></label></div>
+    </header>
+    <section class="hero-grid">
+      <div class="left-stack">
+        <section class="panel hot-panel"><header><h2>协同热点 / 最新事件</h2><div class="tabs" data-hot-tabs><b data-view="keywords">热点关键词</b><span data-view="events">最新事件</span></div></header><div id="hotspot-content" class="hotspot-content" aria-live="polite"></div></section>
+        <section class="panel structure"><header><h2>协同结构分析</h2><div class="tabs" data-structure-tabs><b data-view="stage">办学层占比</b><span data-view="types">协同类型</span></div></header><div id="structure-chart" class="structure-chart" aria-label="协同结构图表"></div></section>
+      </div>
+      <section class="panel map-panel"><header><h2>京津冀区域教育协同活跃度指数 <sup>?</sup></h2><div class="map-tabs"><b>总体</b><span>资源共享</span><span>人才培养</span><span>办学合作</span><span>产教科教融合</span><span>治理机制</span></div></header><div class="map-content"><aside><button>▼ 北京市</button><small>通州</small><button>▶ 天津市</button><button>▼ 河北省</button><small>雄安</small></aside><div id="real-jjj-map" class="map-art" aria-label="京津冀真实行政区划地图"></div><div class="city-map-status" id="city-map-status">市级边界数据接入后，将按市展示</div><div class="map-scale">0　50　100　200 公里</div><div class="map-legend">当月事件数（件）<br><i></i> ＞150<br><i></i> 100–150<br><i></i> 50–100<br><i></i> 10–50<br><i></i> 1–10</div></div></section>
+      <section id="panel-cooperation-network" class="panel network-panel" data-module="cooperation-network"><header><h2>教育协同合作网络 <sup>?</sup></h2><div class="panel-actions"></div></header><div class="panel-body"><div class="loading">正在加载真实合作网络…</div></div></section>
+    </section>
+    <section class="metric-grid">
+      <article class="panel metric" data-index-card="activity"><header><h2>京津冀教育协同活跃度指数</h2><div class="metric-switch"><button data-step="-1">‹</button><span>总体</span><button data-step="1">›</button></div></header><div class="metric-body"><div class="metric-reading"><strong></strong><b></b><p>较上年</p></div><div class="metric-chart"></div></div><footer>数据来源：协同新闻事件库</footer></article>
+      <article class="panel metric" data-index-card="coordination"><header><h2>京津冀区域协同度指数</h2><div class="metric-switch"><button data-step="-1">‹</button><span>总体</span><button data-step="1">›</button></div></header><div class="metric-body"><div class="metric-reading"><strong></strong><b></b><p>较上年</p></div><div class="metric-chart"></div></div><footer>数据来源：统计年鉴</footer></article>
+      <article class="panel metric" data-index-card="education"><header><h2>京津冀教育发展指数</h2><div class="metric-switch"><button data-step="-1">‹</button><span>总体</span><button data-step="1">›</button></div></header><div class="metric-body"><div class="metric-reading"><strong></strong><b></b><p>较上年</p></div><div class="metric-chart"></div></div><footer>数据来源：统计年鉴（最新披露至2025年鉴，即2024年数据）</footer></article>
+    </section>
+    <p class="source">数据更新：2024年09月30日 <span>数据来源：政府网站 ｜ 学校官网 ｜ 主流媒体 ｜ 平台采集整理</span></p>
+  </main>
+  <script src="assets/echarts.min.js"></script><script src="assets/jjj-geo.js"></script><script src="data/news-data.js"></script><script src="data/activity-timeline-data.js"></script><script src="data/stage-share-data.js"></script><script src="data/coordination-index-data.js"></script><script src="data/education-index-data.js"></script><script src="data/city-map-data.js"></script><script src="js/module-loader.js"></script><script src="modules/cooperation-network/cooperation-network.js"></script><script src="js/real-map.js"></script><script src="js/homepage-interactions.js"></script><script src="js/dashboard.js"></script>
+</body></html>
